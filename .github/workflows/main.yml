@@ -47,7 +47,7 @@ jobs:
           kubeconsd2.azurecr.io/aksdemo:${{ github.sha }}
         imagepullsecrets: |
           demo-k8s-secret
-        namespace: demo
+        namespace: aksdemo
 
     - run: |
         kubectl get services -n aksdemo
